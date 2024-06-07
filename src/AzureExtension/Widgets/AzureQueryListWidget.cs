@@ -16,6 +16,7 @@ internal sealed class AzureQueryListWidget : AzureWidget
     private readonly string sampleIconData = IconLoader.GetIconAsBase64("screenshot.png");
 
     // Widget Data
+    
     private string widgetTitle = string.Empty;
     private string selectedQueryUrl = string.Empty;
     private string selectedQueryId = string.Empty;
