@@ -4,7 +4,7 @@ name: Lint
 on:  # yamllint disable-line rule:truthy
   push: null
   pull_request: 
-    branches: [ main ]
+    branches: [ $default-branch ]
 
 permissions: { }
 
@@ -32,6 +32,5 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EDITORCONFIG_FILE_NAME: .editorconfig
           VALIDATE_CSHARP: true
           
